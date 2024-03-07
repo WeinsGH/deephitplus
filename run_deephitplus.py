@@ -47,7 +47,7 @@ calculate_importances       = 'ON' # ON / OFF (only works in combination with fe
 NUM_PERMUTATIONS            = 20
 
 # Only relevant if running HybridDeepHitPlus (features='hybrid_..._...')
-path_to_immportances        = 'output/results-all_rsON/a10_b30_s01_mb050_kp6_lr1E-04_hs100_ns2_hf050-050_nf2-2' # Only required if running HybridDeepHitPlus
+path_to_immportances        = 'output' # Only required if running HybridDeepHitPlus
 
 
 

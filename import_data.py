@@ -78,11 +78,11 @@ def f_get_fc_mask3(time, meas_time, num_Category):
 
 def import_dataset_SYNTHETIC(norm_mode='standard'):
     # Import the dataset
-    df = pd.read_csv('./sample data/SYNTHETIC/synthetic_comprisk.csv')
+    df = pd.read_csv('dataset.csv')
 
     label           = np.asarray(df['label']).reshape([-1,1]) #0, 1, 2, 3 (3-competing risks)
     time            = np.asarray(df['time']).reshape([-1,1])
-    alldata         = df.iloc[:,4:]
+    alldata         = df.iloc[:,2:]
 
     num_Category    = int(np.max(time) * 1.2)
     num_Event       = int(len(np.unique(label)) - 1)
